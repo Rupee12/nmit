@@ -39,10 +39,7 @@ export default function FacultyGallery() {
           ))}
         </div>
 
-        <p className="text-xs text-white/25 mt-8">
-          Add the faculty photos to <code>public/faculty/</code>. Use the filenames configured in
-          <code className="ml-1">src/data/faculty.js</code>.
-        </p>
+        
       </div>
     </section>
   );
