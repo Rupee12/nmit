@@ -1,0 +1,1 @@
+export function getInviteParams(){const p=new URLSearchParams(window.location.search); const name=(p.get('name')||'').trim().slice(0,80); const type=p.get('type'); return {name, type:type==='teacher'||type==='student'?type:null};}
