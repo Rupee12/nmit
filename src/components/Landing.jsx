@@ -1,2 +1,74 @@
-import {useEffect,useRef} from 'react';import gsap from 'gsap';import {ArrowDown} from 'lucide-react';
-export default function Landing({onEnter}){const ref=useRef();useEffect(()=>{gsap.fromTo('.hero-item',{y:28,opacity:0},{y:0,opacity:1,duration:1.2,stagger:.14,ease:'power3.out'})},[]);return <section ref={ref} className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden"><div className="absolute w-[55vw] h-[55vw] rounded-full bg-[#d9b76c]/10 blur-[130px] -top-1/4 -right-1/4"/><div className="absolute w-[40vw] h-[40vw] rounded-full bg-indigo-900/20 blur-[120px] bottom-0 left-0"/><div className="relative max-w-5xl text-center"><img src="/faculty/nmit-logo.png" alt="Nitte Meenakshi Institute of Technology" className="hero-item mx-auto mb-6 block h-auto w-[220px] object-contain sm:w-[260px] md:w-[300px]"/><p className="hero-item tracking-[.35em] text-[10px] md:text-xs text-[#d9b76c] uppercase">Department of MCA</p><p className="hero-item mt-4 text-xs tracking-[.25em] text-white/50 uppercase">Some people teach us lessons.<br/>Some teach us how to live.</p><div className="hero-item mx-auto my-10 h-px w-20 bg-[#d9b76c]/60"/><h1 className="hero-item serif text-6xl md:text-8xl leading-[.9] font-semibold">A Celebration of Our Mentors</h1><p className="hero-item mt-8 text-sm md:text-base text-white/55 tracking-wide">A celebration of the mentors who shape our journey.</p><button onClick={onEnter} className="hero-item focus-ring mt-10 rounded-full border border-[#d9b76c]/60 px-8 py-4 text-xs tracking-[.25em] uppercase text-[#f2dfad] hover:bg-[#d9b76c] hover:text-[#080a10] transition-all">Enter Invitation</button><div className="hero-item mt-20 flex justify-center text-white/30"><ArrowDown className="animate-bounce" size={18}/></div></div></section>}
+import { useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { ArrowDown } from 'lucide-react';
+
+export default function Landing({ onEnter }) {
+  const ref = useRef();
+
+  useEffect(() => {
+    gsap.fromTo(
+      '.hero-item',
+      {
+        y: 28,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1.2,
+        stagger: 0.14,
+        ease: 'power3.out',
+      }
+    );
+  }, []);
+
+  return (
+    <section
+      ref={ref}
+      className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden"
+    >
+      <div className="absolute w-[55vw] h-[55vw] rounded-full bg-[#d9b76c]/10 blur-[130px] -top-1/4 -right-1/4" />
+
+      <div className="absolute w-[40vw] h-[40vw] rounded-full bg-indigo-900/20 blur-[120px] bottom-0 left-0" />
+
+      <div className="relative max-w-5xl text-center">
+        <img
+          src="/faculty/nmit-logo.png"
+          alt="Nitte Meenakshi Institute of Technology"
+          className="hero-item mx-auto mb-6 block h-auto w-[220px] object-contain sm:w-[260px] md:w-[300px]"
+        />
+
+        <p className="hero-item tracking-[.35em] text-[10px] md:text-xs text-[#d9b76c] uppercase">
+          Department of Computer Applications-MCA
+        </p>
+
+        <p className="hero-item mt-4 text-xs tracking-[.25em] text-white/50 uppercase">
+          Some people teach us lessons.
+          <br />
+          Some teach us how to live.
+        </p>
+
+        <div className="hero-item mx-auto my-10 h-px w-20 bg-[#d9b76c]/60" />
+
+        <h1 className="hero-item serif text-6xl md:text-8xl leading-[.9] font-semibold">
+          A Celebration of Our Mentors
+        </h1>
+
+        <p className="hero-item mt-8 text-sm md:text-base text-white/55 tracking-wide">
+          A celebration of the mentors who shape our journey.
+        </p>
+
+        <button
+          onClick={onEnter}
+          className="hero-item focus-ring mt-10 rounded-full border border-[#d9b76c]/60 px-8 py-4 text-xs tracking-[.25em] uppercase text-[#f2dfad] hover:bg-[#d9b76c] hover:text-[#080a10] transition-all"
+        >
+          Enter Invitation
+        </button>
+
+        <div className="hero-item mt-20 flex justify-center text-white/30">
+          <ArrowDown className="animate-bounce" size={18} />
+        </div>
+      </div>
+    </section>
+  );
+}
