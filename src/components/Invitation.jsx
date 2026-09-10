@@ -62,7 +62,7 @@ export default function Invitation({ name, type, onShare }) {
 
         <div className="mt-14 border-y border-white/10 py-10">
           <p className="text-[10px] tracking-[.4em] uppercase text-white/35">
-            Department of MCA · NMIT
+            Department of Computer Applications - MCA
           </p>
 
           <h3 className="serif text-5xl md:text-7xl mt-4 text-[#f2dfad]">
