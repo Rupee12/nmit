@@ -1,1 +1,1 @@
-export const event = { date:'2026-09-11', time:'11:20', displayDate:'11 September 2026', venue:'Samilana, 1st Floor', mapsUrl:'https://www.google.com/maps/search/?api=1&query=Samilana%201st%20floor%20Nitte%20Meenakshi%20Institute%20of%20Technology', calendarDurationMinutes:120 };
+export const event = { date:'2026-09-11', time:'11:20', displayDate:'11 September 2026', venue:'Sammilana Seminar Hall-104', mapsUrl:'https://www.google.com/maps/search/?api=1&query=Samilana%201st%20floor%20Nitte%20Meenakshi%20Institute%20of%20Technology', calendarDurationMinutes:120 };
