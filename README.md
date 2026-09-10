@@ -21,4 +21,10 @@ npm run dev
 `?name=ProfessorName&type=teacher`
 
 ## Deploy
-Run `npm run build`, then deploy the `dist` folder to Vercel, Netlify, GitHub Pages, or another static host.
+This project uses the Vercel `api/appreciations.js` serverless function and Neon Postgres for the shared appreciation wall. In Vercel:
+
+1. Create a Neon Postgres database through the Vercel Marketplace and connect it to this project.
+2. Confirm the production environment has the secret `DATABASE_URL` variable from the Neon integration.
+3. Deploy the project. The API creates the `appreciations` table automatically on its first request.
+
+The database URL is server-only and is never exposed through Vite client environment variables.

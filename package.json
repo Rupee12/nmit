@@ -9,13 +9,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
+    "@vercel/analytics": "^2.0.1",
     "@vitejs/plugin-react": "latest",
+    "canvas-confetti": "latest",
     "framer-motion": "latest",
     "gsap": "latest",
     "lucide-react": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "canvas-confetti": "latest"
+    "react-dom": "latest"
   },
   "devDependencies": {
     "autoprefixer": "latest",
